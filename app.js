@@ -4,9 +4,10 @@ const contentEl = document.querySelector(".content");
 const hamburgerBarsEl = document.getElementsByTagName("span");
 
 function toggleNav() {
-    navTriggerEl.addEventListener("click", function() {
-        navEl.classList.add("open");
-})
+  navTriggerEl.addEventListener("click", function() {
+    navEl.classList.toggle("open");
+    contentEl.classList.toggle("shift");
+  })
 }
 
 toggleNav();
